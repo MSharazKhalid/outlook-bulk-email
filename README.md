@@ -10,12 +10,12 @@ rotating sender identities and writing delivery status back to the sheet.
 Drives the Outlook client already installed and signed in on your machine, so mail
 goes out from real mailboxes rather than a third-party relay.
 
-- **Sender rotation** — switches account after a configurable number of successful
+- **Sender rotation** - switches account after a configurable number of successful
   sends, instead of pushing an entire list through one mailbox
-- **Status write-back** — each row records its own outcome
-- **Autosave** — the sheet is saved as it goes, so an interrupted run is never
+- **Status write-back** - each row records its own outcome
+- **Autosave** - the sheet is saved as it goes, so an interrupted run is never
   ambiguous about where it stopped
-- **Pre-flight check** — verifies every configured sender actually exists in your
+- **Pre-flight check** - verifies every configured sender actually exists in your
   Outlook profile and fails immediately if one does not, rather than halfway through
 
 ## Requirements
@@ -49,9 +49,9 @@ python main.py
 ## Notes on data
 
 This repository contains **no client or patient data**. `.gitignore` already excludes
-`.xlsx`, `.pdf` and `.csv` files, `service_account.json`, and chromedriver binaries —
+`.xlsx`, `.pdf` and `.csv` files, `service_account.json`, and chromedriver binaries -
 keep it that way if you fork this.
 
 ## License
 
-MIT © Muhammad Sharaz Khalid — see [LICENSE](LICENSE).
+MIT © Muhammad Sharaz Khalid - see [LICENSE](LICENSE).
